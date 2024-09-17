@@ -1,0 +1,69 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.great {
+    color: green;
+    text-align: center;
+    padding: 20px;
+    background-color: none;
+}
+
+.greating {
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: green;
+}
+
+p {
+    color: white;
+    padding: 20px 20px;
+    background-color: darkgreen;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+      color: green;
+    text-align: center;
+    padding: 20px;
+    background-color: greenyellow;
+    border-radius: 20px;
+    border: none;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3b5998;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-item {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}

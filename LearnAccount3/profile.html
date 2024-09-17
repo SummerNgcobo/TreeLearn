@@ -1,0 +1,156 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sololearn Profile Clone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+    
+</head>
+<body>
+    <a href="/"><button>&lt;</button></a>
+    <section>
+        
+        <header>
+            <h3>
+                <button class="fas fa-bars menu"></button>
+                <span class="blank"></span>
+                <button class="fas fa-user-plus"></button>
+                <button class="fas fa-bell"></button>
+                <button class="fas fa-ellipsis-v"></button>
+            </h3>
+            <div id="profile-1">
+                <div id="pp">
+                    <img src="img/profilepic.avif" alt="profile pic">
+                    <span class="fas fa-star"></span>
+                </div>
+                <span id="name">Summer Ngcobo</span>
+                <span id="cNl">
+                    <span> 🇿🇦 South Africa • Lvl 16</span>
+                </span>
+                <span id="bio">Word Hard</span>
+                <span id="follow">
+                    208 Followers • 208 Following
+                </span>
+            </div>
+        </header>
+        <div id="upgToPro">
+            <img src="https://i.ibb.co/dt0F8Kr/tab.png" alt="ProTab">
+            <b>Upgrade to Pro</b>
+            <button>START</button>
+        </div>
+        <div id="streak" class="regBox">
+            <h6>STREAK</h6>
+            <div class="streakDays">
+                <div id="sat">
+                    <div class="crcl fas fa-bolt"></div>
+                    <span>S</span>
+                </div>
+                <div id="sun">
+                    <div class="crcl fas fa-check"></div>
+                    <span>S</span>
+                </div>
+                <div id="mon">
+                    <div class="crcl fas fa-gift"></div>
+                    <span>M</span>
+                </div>
+                <div id="tue">
+                    <div class="crcl fas fa-gift"></div>
+                    <span>T</span>
+                </div>
+                <div id="wed">
+                    <div class="crcl"></div>
+                    <span>W</span>
+                </div>
+                <div id="thu">
+                    <div class="crcl fas fa-gift"></div>
+                    <span>T</span>
+                </div>
+                <div id="fri">
+                    <div class="crcl"></div>
+                    <span>F</span>
+                </div>
+            </div>
+            <div id="streakCount">
+                <div id="currentStreak">
+                    <p>Current Streak</p>
+                    <div>
+                        <span class="fas fa-bolt"></span>
+                        <b>2 days</b>
+                    </div>
+                </div>
+                <div id="longestStreak">
+                    <p>Longest Streak</p>
+                    <div>
+                        <span class="fas fa-bolt"></span>
+                        <b>4 days</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dailyGoal" class="regBox">
+            <h6>Daily goal</h6>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button id="goalBtn">YOUR GOAL PROGRESS</button>
+            </div>
+            <button id="setGoal">Set your dail goal! <b class="fas fa-chevron-right"></b></button>
+        </div>
+        <div id="courseProgress" class="regBox">
+            <h6>COURSES PROGRESS</h6>
+            <div class="course">
+                <img src="https://sllearnenginepreprod.blob.core.windows.net/material-images/5b23e931b0c74a1ab22de5cff2531bff-JV_2.png" alt="Course Logo">
+                <p>
+                    <b class="courseName">JavaScript Intermediate</b>
+                    <span class="status">In Progress</span>
+                </p>
+            </div>
+            <div class="course">
+                <img src="https://sllearnenginedev.blob.core.windows.net/material-images/Tech%20for%20Everyone-2.png" alt="Course Logo">
+                <p>
+                    <b class="courseName">Tech for Everyone</b>
+                    <span class="status">In Progress</span>
+                </p>
+            </div>
+            <div class="course">
+                <img src="https://sllearnenginedev.blob.core.windows.net/material-images/95433922af1f4ecb996b9a6dd502b5c5-JS_1.png" alt="Course Logo">
+                <p>
+                    <b class="courseName">Introduction to JavaScript</b>
+                    <span class="status">Completed</span>
+                </p>
+            </div>
+            <button id="showAllCourses">SHOW ALL</button>
+        </div>
+        <div id="certificate" class="regBox">
+            <h6>CERTIFICATE</h6>
+            <div class="certCourse">
+                <b class="fas fa-check check"></b>
+                <img src="https://sllearnenginedev.blob.core.windows.net/material-images/95433922af1f4ecb996b9a6dd502b5c5-JS_1.png" alt="Completed Course Logo">
+            </div>
+            <span>Introduction to JavaScript</span>
+        </div>
+        <div id="activity" class="regBox">
+            <h6>ACTIVITY</h6>
+            <p>Code bits, Solutions, Posts and Questions</p>
+            <button>SEE ACTIVITY</button>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-menu">
+            <a href="/"><button class="footer-item" onclick="navigateTo('main-content')">🏠 Learn</button></a>
+            <button class="footer-item" onclick="navigateTo('community')">👥 Community</button>
+            <button class="footer-item" onclick="navigateTo('leaderboard')">🏆 Leaderboard</button>
+            <button class="footer-item">💻 Create</button>
+
+            <a href="/profile"><button class="footer-item" onclick="navigateTo('profile-content')">👤 Profile</button></a>
+        </div>
+    </footer>
+
+
+</body></html>

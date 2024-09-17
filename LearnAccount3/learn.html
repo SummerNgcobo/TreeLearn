@@ -1,0 +1,101 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloLearn Course (ugly)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Content Page -->
+    <div id="main-content" class="page active">
+        <header>
+            <div class="header-content">
+        
+<div class="sidenav" id="sidenav1">
+    <a href="#" class="closebtn" onclick="closeNav()">×</a>
+    <a href="https://www.sololearn.com/profile/32038689/?ref=app">Sololearn 2</a>
+    <a href="https://www.sololearn.com/profile/32038689/?ref=app">Created by</a>
+    <a href="https://www.sololearn.com/profile/32038689/?ref=app">Only Alya ?</a>
+</div>
+<span id="btn" onclick="openNav()">≡</span>
+
+                <div class="course-title">Introduction to HTML ▼</div>
+                <div class="icons">
+                    <a href="/msg"><span class="icon">🔔</span></a>
+                    <span class="icon">⋮</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="stats">
+            <span class="stat">⚡ 2</span>
+            <span class="stat">📦 80</span>
+            <span class="stat">❤ 1</span>
+        </div>
+
+        <div class="course-section">
+            <div class="section-item completed">✔ Getting Started with HTML</div>
+            <div class="section-item completed">✔ Going Deeper with HTML</div>
+            <div class="section-item completed">✔ Using Attributes</div>
+            <a href="/quiz"><div class="section-item">▶ Mastering HTML</div></a>
+        </div>
+
+        <div class="certificate">
+            <img src="https://via.placeholder.com/150" alt="Certificate Icon">
+            <p class="certificate-text">Your Certificate is close</p>
+            <p class="certificate-desc">You are doing great! Keep learning to unlock your certificate!</p>
+        </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile-content" class="page hidden">
+        <header>
+            <div class="header-content">
+                <button class="menu-icon" onclick="navigateTo('main-content')">←</button>
+                <div class="course-title">Profile</div>
+            </div>
+        </header>
+        <div class="profile-info">
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-menu">
+            <a href="/"><button class="footer-item" onclick="navigateTo('main-content')">🏠 Learn</button></a>
+            <a href="/community"><button class="footer-item" onclick="navigateTo('community')">👥 Community</button></a>
+            <a href="/leaderboard"><button class="footer-item" onclick="navigateTo('leaderboard')">🏆 Leaderboard</button></a>
+            <button class="footer-item">💻 Create</button>
+
+            <a href="/profile"><button class="footer-item" onclick="navigateTo('profile-content')">👤 Profile</button></a>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() {
+    document.getElementById("sidenav1")
+    .style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("sidenav1")
+    .style.width = "0px";
+}
+        document.addEventListener("DOMContentLoaded", function() {
+            function navigateTo(pageId) {
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.add('hidden');
+                    page.classList.remove('slide-in-left', 'slide-in-right');
+                });
+                const targetPage = document.getElementById(pageId);
+                if (targetPage) {
+                    const isGoingLeft = pageId === 'main-content';
+                    targetPage.classList.remove('hidden');
+                    targetPage.classList.add(isGoingLeft ? 'slide-in-left' : 'slide-in-right');
+                }
+            }
+
+            window.navigateTo = navigateTo;
+        });
+    </script>
+
+</body></html>

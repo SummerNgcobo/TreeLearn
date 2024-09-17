@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="sl_profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="styles.css">
+       
+</head>
+
+<body>
+    <div class="header">
+        <div class="status-bar">
+            <span id="curr_time" style="float: left;"> </span>
+            <span id="curr_speed">316 Kb/s</span>
+            <span>TELKOM 5G | UNLIMITED </span>
+            <span id="curr_battery"><i class="fa-solid fa-battery-three-quarters"></i> <p id="battery_pr" style="display: inline;"></p></span>
+        </div>
+    </div>
+
+    <div class="header-content">
+        <div class="menu-icon">&#9776;</div>
+        <div class="profile-pic-container">
+            <img src="img/profilepic.avif" alt="Profile Picture" class="profile-pic">
+            <div class="star-icon"><i class="fa-solid fa-star fa-spin"></i></div>
+        </div>
+        <div class="header-icons">
+            <div class="header-icon"><i class="fa-solid fa-user-plus"></i></div>
+            <div class="header-icon"><i class="fa-solid fa-bell"></i></div>
+            <div class="header-icon">&#8942;</div>
+        </div>
+
+    </div>
+    <div class="profile-info">
+        <h1>SUMMER NGCOBO <i class="fa-brands fa-linkedin" style="cursor: pointer;"></i></h1>
+        <p> 🇿🇦 South Africa • Lvl 16</p>
+        <p id="my_slogan" contenteditable="true">Telkom Hackathon
+            🔥🚩<i class="fa-solid fa-pen" style="color: #fff; cursor: pointer;"></i></p>
+        <p>230 Followers • 20 Following</p>
+    </div>
+    <div class="upgrade-section">
+        <img src="https://i.ibb.co/vL2v3fQ/6c18954c3d2aeec699a677c21b149514.png" alt="">
+        <h3 class="upgrade-button">UPGRADE TO PRO</h3>
+        <button class="start-button">START</button>
+    </div>
+
+    <div class="streak-section">
+        <h2>STREAK</h2>
+        <div class="streak-days">
+            <div class="day completed">S</div>
+            <div class="day completed">S</div>
+            <div class="day completed">M</div>
+            <div class="day completed">T</div>
+            <div class="day active">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+        </div>
+        <hr>
+        <div id="curr_and_longest">
+            <p>Current Streak <br> <i class="fa-solid fa-bolt" style="color: green;"></i> 2 days </p>
+            <p>Longest Streak <br><i class="fa-solid fa-bolt" style="color: orange;"></i> 4 days </p>
+        </div>
+        <hr>
+        <div class="streak_saver">
+            <div>
+                <p>View My Trees</p>
+                <p><i class="fa-solid fa-shield-heart"
+                        style="color: blue; vertical-align: middle; font-size: 20px;"></i> <span>1</span> of 3</p>
+            </div>
+            <div>
+                <button onclick="window.location.href='locked.html'">View My Trees</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="courses_progress">
+        <P>COURSES PROGRESS</P>
+        <div class="course_details">
+            <div>
+                <i class="fa-brands fa-python" style="color: #34C759;"></i>
+            </div>
+            <div>
+                <span> Introduction to Python</span>
+                <button  onclick="window.location.href='quiz2.html'">complete</button>
+            </div>
+        </div>
+        <div class="course_details">
+            <div>
+                <img src="img/ibm.webp" class="icon"></i>
+            </div>
+            <div>
+                <span> Agile Explorer</span>
+                <p>complete</p>
+            </div>
+        </div>
+        <div class="course_details">
+            <div>
+                <img src="img/hp_logo.webp" class="icon"></i>
+            </div>
+            <div>
+                <span> Effective Business Websites</span>
+                <p>complete</p>
+            </div>
+        </div>
+        <div class="course_details">
+            <div>
+                <i class="fa-solid fa-database" style="color: orangered;"></i>
+            </div>
+            <div>
+                <span> Introduction to Sql</span>
+                <p>complete</p>
+            </div>
+        </div> 
+        <div style="border: 1px solid #ddd; margin-top: 7px;"></div>
+        <div class="more_course">
+            <h3>MORE COURSES</h3>
+        </div>
+    </div>
+    </div>
+
+    <div class="certificate_section">
+        <h3>CERTIFICATES</h3>
+        <div id="for_display_flex_certi">
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi">
+                        <h3><i class="fa-solid fa-c fa-flip "></i> #</h3>
+                    </div><br>
+                    <p>Introduction to C#</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: orange;">
+                        <h3><i class="fa-brands fa-chrome fa-spin"></i></h3>
+                    </div><br>
+                    <p>Introduction to web development</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: orangered;">
+                        <h3><i class="fa-brands fa-js fa-bounce"></i></h3>
+                    </div><br>
+                    <p>Introduction to Java Script</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: greenyellow;">
+                        <h3><i class="fa-solid fa-database fa-fade"></i></h3>
+                    </div><br>
+                    <p>Introduction to Sql</p>
+                </div>
+            </div>
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: rgb(233, 233, 24);">
+                        <h3 style=" color: black;">JS</h3>
+                    </div><br>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: sandybrown">
+                        <h3><i class="fa-brands fa-html5 fa-beat-fade" style="color: red;"></i></h3>
+                    </div><br>
+                    <p>Introduction to HTML</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: skyblue;">
+                        <h3><i class="fa-brands fa-css3-alt fa-bounce" style="color: blue;"></i></h3>
+                    </div><br>
+                    <p>Introduction to CSS</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: rgb(68, 68, 218);">
+                        <h3><i class="fa-brands fa-c fa-flip"></i>++</h3>
+                    </div><br>
+                    <p>Introduction to C++</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: rgb(230, 254, 15)">
+                        <h3><i class="fa-brands fa-java fa-bounce" style="color: brown;"></i></h3>
+                    </div><br>
+                    <p>Introduction to JAVA</p>
+                </div>
+            </div>
+
+            <div class="all_certificates">
+                <div class="individual_certi">
+                    <div class="certi" style="background-color: rgb(254, 123, 15)">
+                        <h3><i class="fa-solid fa-gear fa-spin"></i></h3>
+                    </div><br>
+                    <p>Tech For Everyone</p>
+                </div>
+            </div>
+
+           
+            
+
+
+        </div>
+    </div>
+
+    <!-- ---------------------activity section starts from here ----------------------------- -->
+
+    <div class="activity_details">
+        <div>
+            <h3>ACTIVITY</h3>
+        </div>
+        <div class="see_activity">
+            <div>
+                <p>Code bits,Solutions,Posts and Questions</p>
+            </div>
+            <div>
+                <button>SEE ACTIVITY</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar">
+        <a href="quiz2.html" class="nav-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Learn</span>
+        </a>
+        <a href="community.html" class="nav-item">
+            <i class="fa-solid fa-users"></i>
+            <span>Forest</span>
+        </a>
+        <a href="leaderboard.html" class="nav-item">
+            <i class="fa-solid fa-trophy fa-bounce"></i>
+            <span>Leaderboard</span>
+        </a>
+        <a href="#create" class="nav-item">
+            <i class="fa-solid fa-code"></i>
+            <span>Real-Time Assesment</span>
+        </a>
+        <a href="profile.html" class="nav-item active">
+            <img src="img/profilepic.avif" alt="Profile" id="profile_navbar_image">
+            <span>Profile</span>
+        </a>
+    </nav>
+
+
+    <div class="sidebar animate__animated animate__rollIn">
+        <div class="cross_btn_container">
+            <i class="fa-solid fa-square-xmark" id="cross_btn"></i>
+        </div>
+        <div class="upper">
+            <div><img src="img/profilepic.avif" alt="profile_image">
+            </div>
+            <div>
+                <h2>Summer Ngcobo</h2>
+            </div>
+            <div>
+                <p>sngcobo@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="lower">
+            <h4><i class="fa-solid fa-crown"></i> TelkomLearn Pro</h4>
+            <h4><i class="fa-solid fa-trophy"></i> Leaderboard</h4>
+            <h4><i class="fa-solid fa-user-group"></i> Invite Friends</h4>
+            <hr>
+            <h4><i class="fa-solid fa-star"></i> Rate</h4>
+            <h4><i class="fa-solid fa-comment-dots"></i> Feedback</h4>
+            <h4><i class="fa-solid fa-gear"></i> Settings</h4>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const sidebar_button = document.querySelector(".menu-icon");
+const cross_btn = document.querySelector("#cross_btn");
+const sidebar = document.querySelector(".sidebar");
+
+sidebar_button.addEventListener("click", () => {
+    sidebar.style.display = "block";
+
+})
+cross_btn.addEventListener("click", () => {
+    sidebar.style.display = "none";
+})
+
+
+
+function timeDisplay() {
+    const current_time = document.querySelector("#curr_time");
+    const currentTime = new Date();
+    const hours = currentTime.getHours();
+    const minutes = currentTime.getMinutes();
+    const seconds = currentTime.getSeconds();
+    const x = hours >= 12 ? 'PM' : 'AM'
+    // console.log(`${hours}:${minutes}:${seconds}`);
+    current_time.innerHTML = `${hours < 10 ? '0' + hours: hours}:${minutes< 10? '0' + minutes: minutes}:${seconds<10 ? '0'+ seconds: seconds} ${x}`
+}
+
+setInterval(timeDisplay, 1000);
+
+
+function networkSpeed() {
+    const current_speed = document.querySelector("#curr_speed");
+    const randomNumber = Math.floor(Math.random() * 1001);
+
+    current_speed.innerHTML = `${randomNumber} MB/s`;
+
+}
+setInterval(networkSpeed, 1500)
+
+function battery_charge() {
+    const battery_pr = document.querySelector("#battery_pr");
+    const randomNumber = Math.floor(Math.random() * 101);
+
+    battery_pr.innerHTML = `${randomNumber} %`;
+
+
+}
+battery_charge();
+
+
+    </script>
+</body>
+
+</html>
+
+
+
